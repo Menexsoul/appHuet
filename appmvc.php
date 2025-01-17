@@ -1,19 +1,28 @@
 <?php
 
     class Val {
-        private $attributs;
 
         public function __construct() {
-            $this -> attributs = 10;
+
         }
         
-        public function Getvandal() {
-            return $this -> attributs;
+        public function afficherPage($mapage) {
+            if ($mapage == 1) {
+               $this -> page1();
+            }
+            else if ($mapage == 2) {
+                $this -> page2();
+            }
         }
 
-        public function Setvandal($value) {
-            if (($value >= 0 ) && ($value < 10)) $this -> attributs = $value;
+        public function page1() {
+            echo "page1";
         }
+
+        public function page2() {
+            echo "page2";
+        }
+
     }
 
 

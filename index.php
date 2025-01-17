@@ -1,3 +1,6 @@
 <?php
-    echo "Hello World!";
+    include ('appmvc.php');
+    
+    $mavar = new Val();
+    echo $mavar -> Getvandal();
 ?>
